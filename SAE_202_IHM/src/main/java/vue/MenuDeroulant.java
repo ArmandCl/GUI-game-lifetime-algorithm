@@ -142,7 +142,7 @@ public class MenuDeroulant {
      * Crée la barre de menu en appelant la méthode createMenuBar.
      */
     public MenuDeroulant() {
-        menuBar = createMenuBar();
+        menuBar = createMenuButton();
     }
 
     /**
