@@ -10,6 +10,9 @@ module com.example.sae_202_ihm {
     opens com.example.sae_202_ihm to javafx.fxml;
     exports com.example.sae_202_ihm;
     exports vue;
+    exports modele;
+    exports outil;
+    exports controleur;
     opens modele to javafx.base;
     opens outil to javafx.base;
 }
