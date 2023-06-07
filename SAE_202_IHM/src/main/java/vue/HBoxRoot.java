@@ -9,7 +9,7 @@ import outil.LectureFichierTexte;
  * La classe HBoxRoot est une sous-classe de HBox qui représente la racine de l'interface graphique de l'application RPG.
  * Elle contient plusieurs éléments graphiques, tels que VBoxAffichageScenario, GridPaneScenario et GridPaneAffichageSolution.
  */
-public class HboxRoot extends HBox {
+public class HBoxRoot extends HBox {
     /**
      * Constructeur de la classe HBoxRoot.
      * Initialise les différents éléments graphiques utilisés dans l'interface et les ajoute à la HBoxRoot.
