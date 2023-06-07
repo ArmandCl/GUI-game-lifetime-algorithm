@@ -1,0 +1,86 @@
+/* Styles pour le tableau */
+.table-view {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #e8e8e8;
+}
+
+.table-row-cell {
+    -fx-background-color: #ffffff;
+}
+
+/* Styles pour le GridPane */
+.grid-pane {
+    -fx-background-color: #f9f9f9;
+}
+
+/* Styles pour le MenuButton */
+.menu-button {
+    -fx-background-color: #e8e8e8;
+    -fx-padding: 6px;
+}
+
+.menu-button .label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+.menu-button .arrow-button {
+    -fx-padding: 6px;
+    -fx-background-color: transparent;
+}
+
+.menu-button .arrow-button .arrow {
+    -fx-background-color: #333333;
+}
+
+/* Styles pour le ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-border-radius: 4px;
+    -fx-padding: 4px;
+}
+
+.combo-box .arrow-button {
+    -fx-background-color: transparent;
+    -fx-padding: 4px;
+}
+
+.combo-box .arrow-button .arrow {
+    -fx-background-color: #333333;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: #ffffff;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: #e8e8e8;
+}
+
+.combo-box .list-cell:filled:selected,
+.combo-box .list-cell:filled:selected:hover {
+    -fx-text-fill: #000000;
+}
+
+/* Styles pour le ToggleGroup */
+.toggle-group .radio-button {
+    -fx-padding: 6px;
+}
+
+/* Styles pour le Label */
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Styles pour les boutons */
+.button {
+    -fx-padding: 8px 12px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 4px;
+}
+

@@ -4,6 +4,8 @@ import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+import java.io.File;
+
 /**
  * La classe ApplicationRpg est une application JavaFX qui lance l'analyseur RPG.
  * Elle crée une fenêtre avec une scène contenant une racine VBoxRoot pour afficher l'interface graphique.
@@ -18,7 +20,11 @@ public class ApplicationRpg extends Application {
      */
     public void start (Stage stage){
         VBoxRoot root = new VBoxRoot();
-        Scene scene = new Scene(root, 1250, 380);
+        Scene scene = new Scene(root, 1350, 630);
+        File[] fichiersCss = new File("css").listFiles();
+        for (File fichier : fichiersCss){
+            scene.getStylesheets().add(fichier.toURI().toString());
+        }
         stage.setScene(scene);
         stage.setTitle("Analyse RPG");
         stage.show();

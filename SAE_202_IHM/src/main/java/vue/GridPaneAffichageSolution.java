@@ -92,11 +92,11 @@ public class GridPaneAffichageSolution extends GridPane {
         Label labCheminQuete = new Label("Chemin du Joueur:");
         this.add(labCheminQuete,0,ligne++);
 
-        chTab.setPrefSize(110,150);
+        chTab.setPrefSize(105,320);
         TableColumn<Quete, Integer> numeroCol = new TableColumn<>("Numero Quete");
         numeroCol.setCellValueFactory(new PropertyValueFactory<>("Numero"));
         numeroCol.setMinWidth(105);
-        numeroCol.setMaxWidth(105);
+
         chTab.getColumns().add(numeroCol);
         this.add(chTab,0,ligne);
 

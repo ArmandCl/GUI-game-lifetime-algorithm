@@ -32,7 +32,7 @@ public class VBoxAffichageScenario extends VBox {
     public VBoxAffichageScenario(TreeMap<Integer, ArrayList<Quete>> parQuete) {
         chLabScenario.setAlignment(Pos.CENTER);
         // Créer les colonnes du TableView
-        chTab.setPrefSize(620,500);
+        chTab.setPrefSize(650,500);
         TableColumn<Quete, Integer> numeroCol = new TableColumn<>("Numero");
         numeroCol.setCellValueFactory(new PropertyValueFactory<>("Numero"));
 
@@ -51,6 +51,7 @@ public class VBoxAffichageScenario extends VBox {
         TableColumn<Quete, String> intituleCol = new TableColumn<>("Intitule");
         intituleCol.setResizable(true);
         intituleCol.setCellValueFactory(new PropertyValueFactory<>("Intitule"));
+        intituleCol.setMinWidth(300);
 
 
         chTab.getColumns().addAll(numeroCol, positionCol, preconditionCol, dureeCol, experienceCol, intituleCol);
