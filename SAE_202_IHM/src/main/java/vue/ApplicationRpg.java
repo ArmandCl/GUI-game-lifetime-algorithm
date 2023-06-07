@@ -17,8 +17,11 @@ public class ApplicationRpg extends Application {
      * @param stage le stage de l'application JavaFX
      */
     public void start (Stage stage){
-
-
+        VBoxRoot root = new VBoxRoot();
+        Scene scene = new Scene(root, 1250, 380);
+        stage.setScene(scene);
+        stage.setTitle("Analyse RPG");
+        stage.show();
     }
 
     /**
@@ -28,6 +31,6 @@ public class ApplicationRpg extends Application {
      * @param args les arguments de la ligne de commande
      */
     public static void main(String[] args) {
-
+        Application.launch(args);
     }
 }
