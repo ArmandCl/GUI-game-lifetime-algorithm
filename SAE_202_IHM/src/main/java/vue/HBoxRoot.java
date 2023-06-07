@@ -10,11 +10,27 @@ import outil.LectureFichierTexte;
  * Elle contient plusieurs éléments graphiques, tels que VBoxAffichageScenario, GridPaneScenario et GridPaneAffichageSolution.
  */
 public class HBoxRoot extends HBox {
+
+    private static VBoxAffichageScenario chAfficheScenario;
+    private static GridPaneScenario chGridPaneScenario;
+    private static GridPaneAffichageSolution chAffichageSolution;
+    private static LectureFichierTexte lectureFichierTexte;
+    private static Controleur chControleur;
+    private static Joueur chJoueur;
     /**
      * Constructeur de la classe HBoxRoot.
      * Initialise les différents éléments graphiques utilisés dans l'interface et les ajoute à la HBoxRoot.
      */
     public HBoxRoot() {
+        super(30);
+        chControleur = new Controleur();
+        lectureFichierTexte = new LectureFichierTexte();
+        chAfficheScenario = new VBoxAffichageScenario(lectureFichierTexte.getScenarios());
+        chGridPaneScenario = new GridPaneScenario();
+        chJoueur = new Joueur();
+        chAffichageSolution = new GridPaneAffichageSolution(chJoueur);
+        getChildren().addAll(chAfficheScenario, chGridPaneScenario, chAffichageSolution);
+
 
     }
 
@@ -24,7 +40,7 @@ public class HBoxRoot extends HBox {
      * @return l'objet Controleur
      */
     public static Controleur getChControleur() {
-
+        return chControleur;
     }
 
     /**
@@ -33,7 +49,7 @@ public class HBoxRoot extends HBox {
      * @return l'objet VBoxAffichageScenario
      */
     public static VBoxAffichageScenario getChAfficheScenario() {
-
+        return chAfficheScenario;
     }
 
     /**
@@ -42,7 +58,7 @@ public class HBoxRoot extends HBox {
      * @return l'objet GridPaneAffichageSolution
      */
     public static GridPaneAffichageSolution getChAffichageSolution() {
-
+        return chAffichageSolution;
     }
 
     /**
@@ -51,7 +67,7 @@ public class HBoxRoot extends HBox {
      * @return l'objet GridPaneScenario
      */
     public static GridPaneScenario getChGridPaneScenario() {
-
+        return chGridPaneScenario;
     }
 
     /**
@@ -60,7 +76,7 @@ public class HBoxRoot extends HBox {
      * @return l'objet LectureFichierTexte
      */
     public static LectureFichierTexte getLectureFichierTexte() {
-
+        return lectureFichierTexte = new LectureFichierTexte();
     }
 
     /**
@@ -69,6 +85,6 @@ public class HBoxRoot extends HBox {
      * @return l'objet Joueur
      */
     public static Joueur getChJoueur() {
-
+        return chJoueur;
     }
 }
