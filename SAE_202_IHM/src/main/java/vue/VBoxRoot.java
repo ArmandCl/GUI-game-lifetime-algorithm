@@ -9,6 +9,10 @@ import javafx.scene.layout.VBox;
  */
 public class VBoxRoot extends VBox {
 
+    private static HBoxRoot chHBoxRoot;
+    private static MenuDeroulant chMenuDeroulant;
+    private static Controleur chControleur;
+
 
     /**
      * Constructeur de la classe VBoxRoot.
@@ -16,8 +20,14 @@ public class VBoxRoot extends VBox {
      * Ajoute le MenuBar de MenuDeroulant et HBoxRoot à la VBoxRoot.
      */
     public VBoxRoot() {
+        super(10);
+        chControleur = new Controleur();
+        chHBoxRoot = new HBoxRoot();
+        chMenuDeroulant = new MenuDeroulant();
+        getChildren().addAll(chMenuDeroulant.getMenuBar(),chHBoxRoot);
 
-       }
+
+    }
 
     /**
      * Obtient l'objet Controleur utilisé dans l'application.
@@ -25,7 +35,7 @@ public class VBoxRoot extends VBox {
      * @return l'objet Controleur
      */
     public static Controleur getChControleur() {
-
+        return chControleur;
     }
 
     /**
@@ -34,6 +44,6 @@ public class VBoxRoot extends VBox {
      * @return l'objet MenuDeroulant
      */
     public static MenuDeroulant getChMenuDeroulant() {
-
+        return chMenuDeroulant;
     }
 }
