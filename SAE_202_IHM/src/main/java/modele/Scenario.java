@@ -8,7 +8,7 @@ public class Scenario {
     private TreeMap<Integer, ArrayList<Quete>> chTreeMapScenario; //arbre avec pour clé un numéro de scénario et pour valeur une liste de quete
 
     /**
-     * methode constructeur de la classe Scenario qui sert à instancier les champs
+     * Méthode constructeur de la classe Scenario qui sert à instancier les champs
      */
     public Scenario() {
         chQuetes = new ArrayList<>();
@@ -16,9 +16,9 @@ public class Scenario {
     }
 
     /**
-     * ajoute une quete à une liste de quetes
+     * Ajoute une quête à une liste de quêtes
      *
-     * @param quete Quete La quete qu'on veut ajouter à la liste
+     * @param quete Quete La quête qu'on veut ajouter à la liste
      */
     public void ajout(Quete quete) {
         chQuetes.add(quete);
@@ -33,7 +33,7 @@ public class Scenario {
     // Autres méthodes de la classe Scenario...
 
     /**
-     * recupere le champ chQuetes
+     * Récupère le champ chQuetes
      *
      * @return chQuetes ArrayList<Quete>
      */
@@ -42,7 +42,7 @@ public class Scenario {
     }
 
     /**
-     * récupère le champ chTreeMapScenario
+     * Récupère le champ chTreeMapScenario
      * @return chTreeMapScenario TreeMap<Integer, ArrayList<Quete>> L'arbre avec pour clé un numéro de scénario et pour valeur une liste de quete
      */
     public TreeMap<Integer, ArrayList<Quete>> getchTreeMapScenario() {

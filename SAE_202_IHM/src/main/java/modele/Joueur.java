@@ -35,7 +35,7 @@ public class Joueur {
     /**
      * Cette methode permet d'ajouter les statistiques de la quete au joueur une fois cette derniere fini
      *
-     * @param quete Quete La quete fait par le joueur
+     * @param quete Quete La quete fait par le joueur pendant la solution Gloutonne
      */
     public void completerQueteGloutonne(Quete quete) {
         if (quete.getNumero() != 0){
@@ -49,6 +49,11 @@ public class Joueur {
         chQuetesCompleteesGloutonne2.add(quete);
     }
 
+    /**
+     * Cette methode permet d'ajouter les statistiques de la quete au joueur une fois cette derniere fini
+     *
+     * @param quete Quete La quete fait par le joueur pendant la solution Exhaustive
+     */
     public void completerQueteExhaustive(Quete quete) {
         if (quete.getNumero() != 0){
             chExperience += quete.getExperience();
@@ -64,7 +69,7 @@ public class Joueur {
 
 
     /**
-     * Cette methode regarde grace au numéro de quete si elle à deja ete complété
+     * Cette methode regarde grace au numéro de quete si elle a deja ete complété
      *
      * @param numQuete int Le numero de la quete que l'on veut vérifier
      * @return boolean True si la quete a été faite et False sinon
@@ -154,7 +159,10 @@ public class Joueur {
         }
     }
 
-    // Méthode pour afficher le chemin des quêtes réalisées dans la solution exhaustive
+    /**
+     * Méthode pour afficher le chemin des quêtes réalisées dans la solution exhaustive
+     */
+
     public void afficherCheminQuetesExhaustive() {
         System.out.println("Chemin des quêtes réalisées pour la solution exhaustive :");
         for (Integer numeroQuete : chQuetesCompleteesExhaustive) {
@@ -165,6 +173,7 @@ public class Joueur {
 
     /**
      * Permet d'avoir une liste de toutes les quetes realisable par le joueur
+     *
      * @param scenario Scenario Le scenario que l'on veut parcourir
      * @return quetesDisponibles ArrayList<Quete> La liste des quetes
      */
@@ -308,7 +317,13 @@ public class Joueur {
         chTemps += tempsDeplacement;
     }
 
-    public void seDeplacerVers(int destinationX, int destinationY) { ////////////a voir
+    /**
+     * Methode qui permet au joueur de se déplacer vers les cordonnées X et Y donnée en parametre
+     * Le joueur se deplace à l'horizontal ou à la verticale case par case
+     * @param destinationX int La coordonnée X ou le joueur veut être
+     * @param destinationY int La coordonnée Y ou le joueur veut être
+     */
+    public void seDeplacerVers(int destinationX, int destinationY) {
         int positionX = chPositionX;
         int positionY = chPositionY;
 
@@ -334,17 +349,44 @@ public class Joueur {
             chDistance += 1;
         }
     }
-
+    /**
+     * Renvoie la distance parcourue.
+     *
+     * @return chDistance int La distance parcourue.
+     */
     public int getChDistance(){
         return chDistance;
     }
-
+    /**
+     * Renvoie le nombre de quêtes.
+     *
+     * @return Le nombre de quêtes.
+     */
     public int getChNbQuetes(){
         return chNbQuetes;
     }
 
+    /**
+     * Renvoie la liste des quêtes complétées selon la stratégie gloutonne.
+     *
+     * @return La liste des quêtes complétées selon la stratégie gloutonne.
+     */
     public ArrayList<Quete> getChQuetesCompleteesGloutonne2(){return chQuetesCompleteesGloutonne2;}
+
+    /**
+     * Renvoie la liste des quêtes complétées selon la stratégie exhaustive.
+     *
+     * @return La liste des quêtes complétées selon la stratégie exhaustive.
+     */
     public ArrayList<Quete> getChQuetesCompleteesExhaustive2(){return chQuetesCompleteesExhaustive2;}
+
+    /**
+     * Réinitialise les attributs de l'objet Joueur.
+     * Remet à zéro les valeurs des attributs chExperience, chPositionX, chPositionY,
+     * chTemps, chDistance, chNbQuetes et les listes chQuetesCompleteesGloutonne,
+     * chQuetesCompleteesExhaustive, chQuetesCompleteesGloutonne2 et chQuetesCompleteesExhaustive2.
+     * Cette méthode permet de remettre le joueur dans un état initial avant de commencer une nouvelle solution.
+     */
     public void reset(){
         chExperience = 0;
         chPositionX = 0;

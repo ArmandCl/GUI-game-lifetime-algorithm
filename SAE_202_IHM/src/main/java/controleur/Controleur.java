@@ -11,6 +11,9 @@ import vue.*;
 
 import java.util.ArrayList;
 
+/**
+ * Cette classe nous permet de faire la liaison entre les vues et les modèles
+ */
 public class Controleur implements EventHandler {
 
 

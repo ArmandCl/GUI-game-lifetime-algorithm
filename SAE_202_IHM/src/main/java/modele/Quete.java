@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * cette classe va être utilisé pour extraire des données relatives aux quêtes pour les rendre exploitables et plus lisibles / compréhensibles
+ * Cette classe va être utilisé pour extraire des données relatives aux quêtes pour les rendre exploitables et plus lisibles / compréhensibles
  */
 public class Quete extends Joueur implements Serializable {
     private int numero;
@@ -93,14 +93,14 @@ public class Quete extends Joueur implements Serializable {
     }
 
     /**
-     * permet d'avoir le numero d'une quete
+     * Permet d'avoir le numéro d'une quête
      *
-     * @return numero int
+     * @return numéro int
      */
     public int getNumero(){return numero;}
 
     /**
-     * Permet d'avoir la position d'une quete
+     * Permet d'avoir la position d'une quête
      *
      * @return pos int[]
      */
@@ -111,32 +111,37 @@ public class Quete extends Joueur implements Serializable {
     }
 
     /**
-     * Permet d'avoir la précondition d'une quete
+     * Permet d'avoir la précondition d'une quête
      *
      * @return precond int[]
      */
     public int[] getPrecond(){return precond;}
 
+    /**
+     * Methode permettant de retourner le champ prcond qui est une liste en String
+     *
+     * @return String le contenu du champ precond
+     */
     public String getPrecondAsString(){
         return Arrays.toString(precond);
     }
 
     /**
-     * Permet d'avoir la durré d'une quete
+     * Permet d'avoir la durée d'une quête
      *
-     * @return duree int
+     * @return durée int
      */
     public int getDuree(){return duree;}
 
     /**
-     * Permet d'avoir l'experience d'une quete
+     * Permet d'avoir l'expérience d'une quête
      *
      * @return experience int
      */
     public int getExperience(){return experience;}
 
     /**
-     * Permet d'avoir l'intitulé d'une quete
+     * Permet d'avoir l'intitulé d'une quête
      *
      * @return intitule String
      */

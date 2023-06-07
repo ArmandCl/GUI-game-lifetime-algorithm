@@ -8,7 +8,7 @@ public class SolutionEfficace {
     private boolean queteFinal;
 
     /**
-     * methode constructeur de la classe Solution et permet d'instancier les deux champs
+     * Methode constructeur de la classe Solution et permet d'instancier les deux champs
      * @param scenario Scenario
      * @param joueur Joueur
      */
@@ -48,7 +48,7 @@ public class SolutionEfficace {
 
 
     /**
-     * methode pour utiliser la solution gloutonne
+     * Methode pour utiliser la solution gloutonne
      */
     public void solutionGloutonne() {
         while (!queteFinal) {
