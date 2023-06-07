@@ -50,7 +50,7 @@ public class Controleur implements EventHandler {
         }
 
         if (event.getSource() instanceof ComboBox<?>){
-            int numScenario = menuDeroulant.getChNumScenario();
+            int numScenario = scenarioPane.getNumScenario();
             ArrayList<Quete> quetes = fichierScenario.getKey(numScenario);
             affichageScenario.update(numScenario,quetes);
         }
