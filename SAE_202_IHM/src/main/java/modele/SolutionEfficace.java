@@ -20,7 +20,7 @@ public class SolutionEfficace {
 
     /**
      * Méthode pour trouver la quête la plus proche en termes de position
-     * @param quetesDisponibles ArrayList<Quete> La liste de quete qui sont disponible (on a eu cette liste grâce à la methode getQuetesDisponibles)
+     * @param quetesDisponibles ArrayList Quete La liste de quete qui sont disponible (on a eu cette liste grâce à la methode getQuetesDisponibles)
      * @return quetePlusProche Quete La quete la plus proche
      */
     public Quete trouverQuetePlusProche(ArrayList<Quete> quetesDisponibles) {

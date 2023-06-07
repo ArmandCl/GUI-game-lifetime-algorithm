@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8d802010-5cff-4a92-9ea9-8968fbddfc0a" name="Changes" comment="" />
+    <list default="true" id="8d802010-5cff-4a92-9ea9-8968fbddfc0a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SAE_202_IHM/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/SAE_202_IHM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/Joueur.java" beforeDir="false" afterPath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/Joueur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/Scenario.java" beforeDir="false" afterPath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/Scenario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/SolutionEfficace.java" beforeDir="false" afterPath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/modele/SolutionEfficace.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/outil/LectureFichierTexte.java" beforeDir="false" afterPath="$PROJECT_DIR$/SAE_202_IHM/src/main/java/outil/LectureFichierTexte.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,18 +24,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/Travail/Université/Travail/SAE/SAE-2.02-version-IHM-Exploration-algorithmique-d-un-probleme/SAE_202_IHM",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Armand/IdeaProjects/SAE-2.02-version-IHM-Exploration-algorithmique-d-un-probleme/SAE_202_IHM&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -38,6 +46,8 @@
       <updated>1686143282530</updated>
       <workItem from="1686143284228" duration="206000" />
       <workItem from="1686154350625" duration="53000" />
+      <workItem from="1686158349109" duration="39000" />
+      <workItem from="1686158614344" duration="100000" />
     </task>
     <servers />
   </component>

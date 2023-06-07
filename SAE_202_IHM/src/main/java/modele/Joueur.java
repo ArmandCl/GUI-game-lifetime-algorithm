@@ -175,7 +175,7 @@ public class Joueur {
      * Permet d'avoir une liste de toutes les quetes realisable par le joueur
      *
      * @param scenario Scenario Le scenario que l'on veut parcourir
-     * @return quetesDisponibles ArrayList<Quete> La liste des quetes
+     * @return quetesDisponibles ArrayList Quete La liste des quetes
      */
     public ArrayList<Quete> getQuetesDisponiblesGloutonne(Scenario scenario) {
         ArrayList<Quete> quetesDisponibles = new ArrayList<>();
@@ -194,7 +194,7 @@ public class Joueur {
      * depuis un scenario donné et les mets dans une liste
      *
      * @param scenario Scenario Le scenario dont on veut extraire les quetes disponible pour l'exhaustive
-     * @return quetesDisponibles ArrayList<Quete>
+     * @return quetesDisponibles ArrayList Quete
      */
     public ArrayList<Quete> getQuetesDisponiblesExhaustive(Scenario scenario) {
         ArrayList<Quete> quetesDisponibles = new ArrayList<>();

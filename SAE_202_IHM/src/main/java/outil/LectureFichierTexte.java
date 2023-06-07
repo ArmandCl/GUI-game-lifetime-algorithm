@@ -73,7 +73,7 @@ public class LectureFichierTexte {
     /**
      * Permet de récupérer tous les scénarios stockés dans le TreeMap.
      *
-     * @return TreeMap<Integer, Scenario> Le TreeMap contenant les scénarios
+     * @return TreeMap Integer, Scenario  Le TreeMap contenant les scénarios
      */
     public static TreeMap<Integer, ArrayList<Quete>> getScenarios() {
         return scenarios;

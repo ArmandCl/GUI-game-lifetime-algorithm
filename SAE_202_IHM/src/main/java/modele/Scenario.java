@@ -35,7 +35,7 @@ public class Scenario {
     /**
      * Récupère le champ chQuetes
      *
-     * @return chQuetes ArrayList<Quete>
+     * @return chQuetes ArrayList Quete
      */
     public ArrayList<Quete> getChQuetes() {
         return chQuetes;
@@ -43,7 +43,7 @@ public class Scenario {
 
     /**
      * Récupère le champ chTreeMapScenario
-     * @return chTreeMapScenario TreeMap<Integer, ArrayList<Quete>> L'arbre avec pour clé un numéro de scénario et pour valeur une liste de quete
+     * @return chTreeMapScenario TreeMap Integer, ArrayList Quete L'arbre avec pour clé un numéro de scénario et pour valeur une liste de quete
      */
     public TreeMap<Integer, ArrayList<Quete>> getchTreeMapScenario() {
         return chTreeMapScenario;
