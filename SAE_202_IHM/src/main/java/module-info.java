@@ -8,5 +8,6 @@ module com.example.sae_202_ihm {
     requires org.junit.jupiter.api;
 
     opens com.example.sae_202_ihm to javafx.fxml;
-    //exports com.example.sae_202_ihm;
+    exports com.example.sae_202_ihm;
+    exports vue;
 }
