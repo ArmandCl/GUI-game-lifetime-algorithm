@@ -1,7 +1,9 @@
 package modele;
 
 import java.util.ArrayList;
-
+/**
+ * cette classe nous sera utile pour regrouper les différentes informations sur le joueur, à faire des calculs et des actions avec les quêtes.
+ */
 public class Joueur {
     private int chExperience;
     private int chPositionX;

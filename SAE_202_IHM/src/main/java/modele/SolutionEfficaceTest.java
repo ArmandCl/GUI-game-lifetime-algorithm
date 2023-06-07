@@ -5,7 +5,9 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Cette classe nous permettra de tester les différentes méthodes de la classe SolutionEfficace et de nous assurer qu'elles fonctionnent comme voulu.
+ */
 public class SolutionEfficaceTest {
     @Test
     void trouverQuetePlusProche(){

@@ -2,7 +2,9 @@ package modele;
 
 import java.util.ArrayList;
 import java.util.TreeMap;
-
+/**
+ * Cette classe nous sera utile pour travailler sur les scénarios, ajouter des quêtes, récupérer la liste de quête du scénario ...
+ */
 public class Scenario {
     private ArrayList<Quete> chQuetes;
     private TreeMap<Integer, ArrayList<Quete>> chTreeMapScenario; //arbre avec pour clé un numéro de scénario et pour valeur une liste de quete

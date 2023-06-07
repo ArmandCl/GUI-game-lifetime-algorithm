@@ -1,7 +1,9 @@
 package modele;
 
 import java.util.ArrayList;
-
+/**
+ * Cette classe nous servira à utiliser la méthode efficace (gloutonne).
+ */
 public class SolutionEfficace {
     private Scenario scenario;
     private Joueur joueur;

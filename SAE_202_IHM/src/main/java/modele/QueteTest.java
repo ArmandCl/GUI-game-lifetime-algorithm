@@ -3,7 +3,9 @@ package modele;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Cette classe nous permettra de tester les différentes méthodes de la classe Quete et de nous assurer qu'elles fonctionnent comme voulu
+ */
 class QueteTest {
 
     @Test

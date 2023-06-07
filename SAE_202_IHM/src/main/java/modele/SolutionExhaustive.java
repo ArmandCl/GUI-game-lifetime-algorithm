@@ -3,7 +3,7 @@ package modele;
 import java.util.ArrayList;
 
 /**
- * Cette classe nous servira à utiliser la méthode Exhaustive.
+ * Cette classe nous servira à utiliser la méthode exhaustive.
  */
 public class SolutionExhaustive {
 

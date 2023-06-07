@@ -10,7 +10,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.TreeMap;
 
-
+/**
+ * Cette classe nous servira à lire les scénarios et à en extraire les différentes quêtes.
+ */
 public class LectureFichierTexte {
     private static Scenario scenario;
     private static TreeMap<Integer, ArrayList<Quete>> scenarios;

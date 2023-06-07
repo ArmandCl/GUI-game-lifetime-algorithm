@@ -5,7 +5,9 @@ import org.testng.annotations.Test;
 import java.util.ArrayList;
 
 import static org.junit.jupiter.api.Assertions.*;
-
+/**
+ * Cette classe nous permettra de tester les différentes méthodes de la classe Joueur et de nous assurer qu'elles fonctionnent comme voulu
+ */
 public class JoueurTest {
 
     @Test
